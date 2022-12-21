@@ -1,0 +1,15 @@
+if TARGET_ACMESYSTEMS_BERTAD2
+
+config SYS_BOARD
+	default "bertad2"
+
+config SYS_VENDOR
+	default "acmesystems"
+
+config SYS_SOC
+	default "at91"
+
+config SYS_CONFIG_NAME
+	default "bertad2"
+
+endif

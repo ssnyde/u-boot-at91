@@ -181,6 +181,13 @@ config TARGET_SAMA5D2_XPLAINED
 	select SAMA5D2
 	select SUPPORT_SPL
 
+config TARGET_ACMESYSTEMS_BERTAD2
+	bool "Acmesystems BertaD2 board"
+	select BOARD_EARLY_INIT_F
+	select BOARD_LATE_INIT
+	select SAMA5D2
+	select SUPPORT_SPL
+
 config TARGET_SAMA5D27_SOM1_EK
 	bool "SAMA5D27 SOM1 EK board"
 	select SAMA5D2
@@ -346,6 +353,7 @@ source "board/ronetix/pm9g45/Kconfig"
 source "board/siemens/corvus/Kconfig"
 source "board/siemens/taurus/Kconfig"
 source "board/siemens/smartweb/Kconfig"
+source "board/acmesystems/bertad2/Kconfig"
 
 config SPL_LDSCRIPT
 	default "arch/arm/mach-at91/arm926ejs/u-boot-spl.lds" if CPU_ARM926EJS
